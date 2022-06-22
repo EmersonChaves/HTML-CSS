@@ -9,10 +9,25 @@
 <body>
     <h1>Formulario</h1>
 
-    <form action="">
-        <p>Nome <input type="text" name="name" id="nome"></p>
-        <p>Sobrenome  <input type="text" name="name" id="nome"></p>
-        <p><input type="submit" value="enviar"></p>
+    <form action="cadastro" method="post">
+        <p> <label for="inome">Nome </label>
+            
+            <input type="text" name="name" id="inome" required placeholder="Nome" autocomplete="username">
+        </p>
+
+        <p><label for="isobrenome"> Sobrenome</label>
+             
+            <input type="text" name="sobrenome" id="isobrenome" required placeholder="Sobrenome" autocomplete="nickname">
+        </p>
+
+        <p>
+            <label for="ipassword"> senha</label>
+            <input type="password" name="senha" id="isenha" required placeholder="password">
+        </p>
+
+        <p>
+            <input type="submit" value="enviar">
+        </p>
 
 
     </form>
